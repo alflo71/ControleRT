@@ -707,7 +707,7 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="ControleRT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="ControleRT" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="480"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -907,10 +907,10 @@
             </objects>
             <point key="canvasLocation" x="90" y="953"/>
         </scene>
-        <!--View Controller-->
+        <!--Cadastro de Cliente-->
         <scene sceneID="8cw-CO-WDG">
             <objects>
-                <viewController id="pbg-q5-HCj" sceneMemberID="viewController">
+                <viewController title="Cadastro de Cliente" id="pbg-q5-HCj" sceneMemberID="viewController">
                     <view key="view" id="Hg3-jC-6ja">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="350"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1068,10 +1068,10 @@
             </objects>
             <point key="canvasLocation" x="708" y="727"/>
         </scene>
-        <!--View Controller-->
+        <!--Cadastro de Arquiteto-->
         <scene sceneID="JIF-qc-Uc3">
             <objects>
-                <viewController id="TpK-mk-F0E" sceneMemberID="viewController">
+                <viewController title="Cadastro de Arquiteto" id="TpK-mk-F0E" sceneMemberID="viewController">
                     <view key="view" id="usz-6B-SBX">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="350"/>
                         <autoresizingMask key="autoresizingMask"/>
