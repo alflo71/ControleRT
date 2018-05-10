@@ -11,7 +11,29 @@
 		EF312FF620A4B5700005B906 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF312FF520A4B5700005B906 /* ViewController.swift */; };
 		EF312FF820A4B5720005B906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF312FF720A4B5720005B906 /* Assets.xcassets */; };
 		EF312FFB20A4B5720005B906 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF312FF920A4B5720005B906 /* Main.storyboard */; };
+		EF31300520A4B5A60005B906 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF31300320A4B5A50005B906 /* Realm.framework */; };
+		EF31300620A4B5A60005B906 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF31300320A4B5A50005B906 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF31300720A4B5A60005B906 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF31300420A4B5A60005B906 /* RealmSwift.framework */; };
+		EF31300820A4B5A60005B906 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF31300420A4B5A60005B906 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF31300F20A4B6310005B906 /* Arquiteto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF31300C20A4B6300005B906 /* Arquiteto.swift */; };
+		EF31301020A4B6310005B906 /* Cliente.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF31300D20A4B6300005B906 /* Cliente.swift */; };
+		EF31301120A4B6310005B906 /* Consultor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF31300E20A4B6300005B906 /* Consultor.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EF31300920A4B5A60005B906 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EF31300820A4B5A60005B906 /* RealmSwift.framework in Embed Frameworks */,
+				EF31300620A4B5A60005B906 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EF312FF020A4B5700005B906 /* ControleRT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ControleRT.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,6 +43,11 @@
 		EF312FFA20A4B5720005B906 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF312FFC20A4B5720005B906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF312FFD20A4B5720005B906 /* ControleRT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ControleRT.entitlements; sourceTree = "<group>"; };
+		EF31300320A4B5A50005B906 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		EF31300420A4B5A60005B906 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		EF31300C20A4B6300005B906 /* Arquiteto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arquiteto.swift; sourceTree = "<group>"; };
+		EF31300D20A4B6300005B906 /* Cliente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cliente.swift; sourceTree = "<group>"; };
+		EF31300E20A4B6300005B906 /* Consultor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Consultor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF31300720A4B5A60005B906 /* RealmSwift.framework in Frameworks */,
+				EF31300520A4B5A60005B906 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +66,8 @@
 		EF312FE720A4B5700005B906 = {
 			isa = PBXGroup;
 			children = (
+				EF31300320A4B5A50005B906 /* Realm.framework */,
+				EF31300420A4B5A60005B906 /* RealmSwift.framework */,
 				EF312FF220A4B5700005B906 /* ControleRT */,
 				EF312FF120A4B5700005B906 /* Products */,
 			);
@@ -55,12 +86,23 @@
 			children = (
 				EF312FF320A4B5700005B906 /* AppDelegate.swift */,
 				EF312FF520A4B5700005B906 /* ViewController.swift */,
+				EF31301220A4B63F0005B906 /* Modelos */,
 				EF312FF720A4B5720005B906 /* Assets.xcassets */,
 				EF312FF920A4B5720005B906 /* Main.storyboard */,
 				EF312FFC20A4B5720005B906 /* Info.plist */,
 				EF312FFD20A4B5720005B906 /* ControleRT.entitlements */,
 			);
 			path = ControleRT;
+			sourceTree = "<group>";
+		};
+		EF31301220A4B63F0005B906 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				EF31300C20A4B6300005B906 /* Arquiteto.swift */,
+				EF31300D20A4B6300005B906 /* Cliente.swift */,
+				EF31300E20A4B6300005B906 /* Consultor.swift */,
+			);
+			path = Modelos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,6 +115,7 @@
 				EF312FEC20A4B5700005B906 /* Sources */,
 				EF312FED20A4B5700005B906 /* Frameworks */,
 				EF312FEE20A4B5700005B906 /* Resources */,
+				EF31300920A4B5A60005B906 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF31301020A4B6310005B906 /* Cliente.swift in Sources */,
+				EF31300F20A4B6310005B906 /* Arquiteto.swift in Sources */,
+				EF31301120A4B6310005B906 /* Consultor.swift in Sources */,
 				EF312FF620A4B5700005B906 /* ViewController.swift in Sources */,
 				EF312FF420A4B5700005B906 /* AppDelegate.swift in Sources */,
 			);
@@ -272,6 +318,11 @@
 				CODE_SIGN_ENTITLEMENTS = ControleRT/ControleRT.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7325YRVK97;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ControleRT/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,6 +341,11 @@
 				CODE_SIGN_ENTITLEMENTS = ControleRT/ControleRT.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7325YRVK97;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ControleRT/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -21,7 +21,11 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-
-
+    @IBAction func btnCalcRT(_ sender: Any) {
+    }
+    
+    @IBAction func btnClose(_ sender: Any) {
+    }
+    
 }
 
