@@ -910,12 +910,12 @@
         <!--Cadastro de Cliente-->
         <scene sceneID="8cw-CO-WDG">
             <objects>
-                <viewController title="Cadastro de Cliente" id="pbg-q5-HCj" sceneMemberID="viewController">
+                <viewController title="Cadastro de Cliente" id="pbg-q5-HCj" customClass="viewCadastroCliente" customModule="ControleRT" sceneMemberID="viewController">
                     <view key="view" id="Hg3-jC-6ja">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="350"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eu5-mz-y2p">
+                            <stackView distribution="fillEqually" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eu5-mz-y2p">
                                 <rect key="frame" x="80" y="63" width="355" height="267"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QL2-0G-L1r">
@@ -1033,6 +1033,9 @@
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
+                                        <connections>
+                                            <action selector="btnUpdate:" target="pbg-q5-HCj" id="bXA-su-EaJ"/>
+                                        </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ptw-6K-JmX">
                                         <rect key="frame" x="75" y="-7" width="85" height="32"/>
@@ -1040,6 +1043,9 @@
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
+                                        <connections>
+                                            <action selector="btnClose:" target="pbg-q5-HCj" id="xJp-2q-ggj"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <visibilityPriorities>
@@ -1076,7 +1082,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="350"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hIN-r9-Wi4">
+                            <stackView distribution="fillEqually" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hIN-r9-Wi4">
                                 <rect key="frame" x="80" y="63" width="355" height="267"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Jyr-zn-cMO">
@@ -1217,7 +1223,6 @@
                             <constraint firstItem="hIN-r9-Wi4" firstAttribute="top" secondItem="usz-6B-SBX" secondAttribute="top" constant="20" id="FE6-PD-J6d"/>
                             <constraint firstItem="hIN-r9-Wi4" firstAttribute="leading" secondItem="usz-6B-SBX" secondAttribute="leading" constant="80" id="Gas-3j-WFZ"/>
                             <constraint firstAttribute="trailing" secondItem="Oce-R9-q4q" secondAttribute="trailing" constant="148" id="Kxd-xZ-f1m"/>
-                            <constraint firstAttribute="bottom" secondItem="Oce-R9-q4q" secondAttribute="bottom" constant="20" id="c1Z-2W-Kcb"/>
                             <constraint firstItem="Oce-R9-q4q" firstAttribute="top" secondItem="hIN-r9-Wi4" secondAttribute="bottom" constant="22" id="hfQ-P0-M9a"/>
                             <constraint firstItem="Oce-R9-q4q" firstAttribute="leading" secondItem="usz-6B-SBX" secondAttribute="leading" constant="148" id="l6W-AN-Kgt"/>
                             <constraint firstAttribute="bottom" secondItem="hIN-r9-Wi4" secondAttribute="bottom" constant="63" id="oMU-PQ-uRp"/>
@@ -1227,7 +1232,7 @@
                 </viewController>
                 <customObject id="LOz-a8-oZc" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="708" y="1144"/>
+            <point key="canvasLocation" x="708" y="1208"/>
         </scene>
     </scenes>
 </document>

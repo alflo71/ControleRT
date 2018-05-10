@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF1AB94F20A4E94F00EF079F /* viewCadastroCliente.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1AB94E20A4E94F00EF079F /* viewCadastroCliente.swift */; };
 		EF312FF420A4B5700005B906 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF312FF320A4B5700005B906 /* AppDelegate.swift */; };
 		EF312FF620A4B5700005B906 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF312FF520A4B5700005B906 /* ViewController.swift */; };
 		EF312FF820A4B5720005B906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF312FF720A4B5720005B906 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EF1AB94E20A4E94F00EF079F /* viewCadastroCliente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewCadastroCliente.swift; sourceTree = "<group>"; };
 		EF312FF020A4B5700005B906 /* ControleRT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ControleRT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF312FF320A4B5700005B906 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF312FF520A4B5700005B906 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF1AB95020A4E95F00EF079F /* GrupoViews */ = {
+			isa = PBXGroup;
+			children = (
+				EF1AB94E20A4E94F00EF079F /* viewCadastroCliente.swift */,
+			);
+			path = GrupoViews;
+			sourceTree = "<group>";
+		};
 		EF312FE720A4B5700005B906 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +97,7 @@
 				EF312FF320A4B5700005B906 /* AppDelegate.swift */,
 				EF312FF520A4B5700005B906 /* ViewController.swift */,
 				EF31301220A4B63F0005B906 /* Modelos */,
+				EF1AB95020A4E95F00EF079F /* GrupoViews */,
 				EF312FF720A4B5720005B906 /* Assets.xcassets */,
 				EF312FF920A4B5720005B906 /* Main.storyboard */,
 				EF312FFC20A4B5720005B906 /* Info.plist */,
@@ -176,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF1AB94F20A4E94F00EF079F /* viewCadastroCliente.swift in Sources */,
 				EF31301020A4B6310005B906 /* Cliente.swift in Sources */,
 				EF31300F20A4B6310005B906 /* Arquiteto.swift in Sources */,
 				EF31301120A4B6310005B906 /* Consultor.swift in Sources */,
