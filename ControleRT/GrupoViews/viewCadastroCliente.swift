@@ -24,10 +24,12 @@ class viewCadastroCliente: NSViewController {
         super.viewDidLoad()
         
         print("ControleRT:\(Realm.Configuration.defaultConfiguration.fileURL!)")
+       
     }
     
     @IBAction func btnUpdate(_ sender: Any) {
-        let uuid = UUID().uuidString
+            let uuid = UUID().uuidString
+        
         do {
             try! realm.write {
                 let newCliente = Cliente()
@@ -36,14 +38,14 @@ class viewCadastroCliente: NSViewController {
                 newCliente.telefone = textTelefone.stringValue
                 newCliente.endereco = textEndereco.stringValue
                 newCliente.email = textEmail.stringValue
-                newCliente.arquiteto = Arquiteto()
-                newCliente.consultor = Consultor()
+             
                 realm.add(newCliente.self)
             }
             
         }  catch let error as NSError {
             print(error.localizedDescription)
         }
+        
         
     }
     
@@ -52,6 +54,7 @@ class viewCadastroCliente: NSViewController {
         
     }
     
+
+    }
     
     
-}

@@ -12,7 +12,7 @@ import RealmSwift
 class ViewCadastroArquiteto: NSViewController {
     
     let realm = try! Realm()
-
+    
     @IBOutlet weak var textArquitetoID: NSTextField!
     @IBOutlet weak var textNome: NSTextField!
     @IBOutlet weak var textTelefone: NSTextField!
@@ -26,7 +26,7 @@ class ViewCadastroArquiteto: NSViewController {
     
     @IBAction func btnUpdate(_ sender: Any) {
         let uuid = UUID().uuidString
-       
+        
         do {
             try! realm.write {
                 let newArquiteto = Arquiteto()
@@ -34,8 +34,6 @@ class ViewCadastroArquiteto: NSViewController {
                 newArquiteto.nome = textNome.stringValue
                 newArquiteto.telefone = textTelefone.stringValue
                 newArquiteto.email = textEmail.stringValue
-                newArquiteto.cliente = Cliente()
-                newArquiteto.consultor = Consultor()
                 
                 realm.add(newArquiteto.self)
             }

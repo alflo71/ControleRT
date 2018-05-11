@@ -16,11 +16,13 @@ class Cliente: Object {
     @objc dynamic var telefone = ""
     @objc dynamic var endereco = ""
     @objc dynamic var email = ""
-    @objc dynamic var arquiteto: Arquiteto?
-    @objc dynamic var consultor: Consultor?
-
+    
     override static func primaryKey() -> String? {
         return "clienteID"
     }
     
+    convenience init(nome: String) {
+        self.init()
+        self.nome = nome
+    }
 }

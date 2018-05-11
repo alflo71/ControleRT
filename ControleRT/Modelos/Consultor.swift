@@ -11,9 +11,17 @@ import RealmSwift
 
 class Consultor: Object {
     
-    @objc dynamic let consultorID = UUID().uuidString
+    @objc dynamic var consultorID = ""
     @objc dynamic var nome = ""
-    @objc dynamic var cliente: Cliente?
-    @objc dynamic var arquiteto: Arquiteto?
-
+//    let clientes = LinkingObjects(fromType: Cliente.self, property: "nome")
+//    let arquitetos = LinkingObjects(fromType: Arquiteto.self, property: "nome")
+    
+    override static func primaryKey() -> String? {
+        return "consultorID"
+    }
+    
+    convenience init(nome: String) {
+        self.init()
+        self.nome = nome
+    }
 }

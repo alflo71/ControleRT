@@ -15,12 +15,9 @@ class Arquiteto: Object {
     @objc dynamic var nome = ""
     @objc dynamic var telefone = ""
     @objc dynamic var email = ""
-    @objc dynamic var cliente: Cliente?
-    @objc dynamic var consultor: Consultor?
     
     // Dados de conta corrente
-    @objc dynamic var contaID =  UUID().uuidString
-    @objc dynamic var titular = Arquiteto()
+    @objc dynamic var contaID =  ""
     @objc dynamic var banco = ""
     @objc dynamic var agencia = ""
     @objc dynamic var conta = ""
@@ -28,5 +25,10 @@ class Arquiteto: Object {
     
     override static func primaryKey() -> String? {
         return "arquitetoID"
+    }
+    
+    convenience init(nome: String) {
+        self.init()
+        self.nome = nome
     }
 }
