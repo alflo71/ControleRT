@@ -22,4 +22,5 @@ class Cliente: Object {
     override static func primaryKey() -> String? {
         return "clienteID"
     }
+    
 }

@@ -11,7 +11,7 @@ import RealmSwift
 
 class Consultor: Object {
     
-    @objc dynamic var consultorID = UUID().uuidString
+    @objc dynamic let consultorID = UUID().uuidString
     @objc dynamic var nome = ""
     @objc dynamic var cliente: Cliente?
     @objc dynamic var arquiteto: Arquiteto?

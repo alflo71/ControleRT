@@ -1084,7 +1084,7 @@
         <!--Cadastro de Arquiteto-->
         <scene sceneID="JIF-qc-Uc3">
             <objects>
-                <viewController title="Cadastro de Arquiteto" id="TpK-mk-F0E" sceneMemberID="viewController">
+                <viewController title="Cadastro de Arquiteto" id="TpK-mk-F0E" customClass="ViewCadastroArquiteto" customModule="ControleRT" sceneMemberID="viewController">
                     <view key="view" id="usz-6B-SBX">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="350"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1207,6 +1207,9 @@
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
+                                        <connections>
+                                            <action selector="btnUpdate:" target="TpK-mk-F0E" id="YOv-ae-x3L"/>
+                                        </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EIp-rz-Htn">
                                         <rect key="frame" x="75" y="-7" width="85" height="32"/>
@@ -1214,6 +1217,9 @@
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
+                                        <connections>
+                                            <action selector="btnClose:" target="TpK-mk-F0E" id="jcJ-23-tac"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <visibilityPriorities>
@@ -1236,6 +1242,13 @@
                             <constraint firstAttribute="trailing" secondItem="hIN-r9-Wi4" secondAttribute="trailing" constant="15" id="zGv-wz-Wai"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textArquitetoID" destination="J8z-Aw-GmU" id="t9c-qD-dIz"/>
+                        <outlet property="textEmail" destination="gtZ-NE-jXd" id="1Jq-tH-uh0"/>
+                        <outlet property="textEndereco" destination="05Z-zC-84C" id="mvg-8T-ns0"/>
+                        <outlet property="textNome" destination="k3p-tC-YBx" id="nS9-wU-MG0"/>
+                        <outlet property="textTelefone" destination="Gah-dW-BrF" id="D3p-ua-8MQ"/>
+                    </connections>
                 </viewController>
                 <customObject id="LOz-a8-oZc" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

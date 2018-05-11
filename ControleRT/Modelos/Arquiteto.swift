@@ -20,7 +20,7 @@ class Arquiteto: Object {
     
     // Dados de conta corrente
     @objc dynamic var contaID =  UUID().uuidString
-    @objc dynamic var titular: Arquiteto?
+    @objc dynamic var titular = Arquiteto()
     @objc dynamic var banco = ""
     @objc dynamic var agencia = ""
     @objc dynamic var conta = ""
