@@ -50,7 +50,15 @@ class ViewCadastroArquiteto: NSViewController {
         } catch let error as NSError {
             print(error.localizedDescription)
         }
-        
+        clearTextFields()
+    }
+    
+    func clearTextFields() {
+       textArquitetoID.stringValue = ""
+        textNome.stringValue = ""
+        textTelefone.stringValue = ""
+        textEndereco.stringValue = ""
+        textEmail.stringValue = ""
     }
     
     @IBAction func btnClose(_ sender: Any) {

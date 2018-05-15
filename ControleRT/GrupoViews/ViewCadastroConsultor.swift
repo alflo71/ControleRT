@@ -47,8 +47,14 @@ class ViewCadastroConsultor: NSViewController {
         } catch let error as NSError {
             print(error.localizedDescription)
         }
+        clearTextFields()
+    }
     
-        
+    func clearTextFields() {
+        textConsultorID.stringValue = ""
+        textNome.stringValue = ""
+        textTelefone.stringValue = ""
+        textEmail.stringValue = ""
     }
 
     @IBAction func btnClose(_ sender: Any) {

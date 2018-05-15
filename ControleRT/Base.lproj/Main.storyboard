@@ -1249,11 +1249,11 @@
             <objects>
                 <viewController title="Cadastro de Arquiteto" id="TpK-mk-F0E" customClass="ViewCadastroArquiteto" customModule="ControleRT" sceneMemberID="viewController">
                     <view key="view" id="usz-6B-SBX">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="350"/>
+                        <rect key="frame" x="0.0" y="0.0" width="521" height="350"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fillEqually" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hIN-r9-Wi4">
-                                <rect key="frame" x="80" y="63" width="355" height="267"/>
+                                <rect key="frame" x="80" y="63" width="426" height="267"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Jyr-zn-cMO">
                                         <rect key="frame" x="-2" y="250" width="72" height="17"/>
@@ -1362,7 +1362,7 @@
                                 </customSpacing>
                             </stackView>
                             <stackView distribution="fillEqually" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oce-R9-q4q">
-                                <rect key="frame" x="276" y="20" width="154" height="21"/>
+                                <rect key="frame" x="276" y="20" width="225" height="21"/>
                                 <subviews>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Frn-kd-qo4">
                                         <rect key="frame" x="-6" y="-7" width="85" height="32"/>
@@ -1374,8 +1374,18 @@
                                             <action selector="btnUpdate:" target="TpK-mk-F0E" id="YOv-ae-x3L"/>
                                         </connections>
                                     </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JNv-YQ-TiX">
+                                        <rect key="frame" x="75" y="-7" width="80" height="32"/>
+                                        <buttonCell key="cell" type="push" title="Conta " bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="sXB-vF-jZW">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="btnUpdate:" target="TpK-mk-F0E" id="9bi-4K-7ko"/>
+                                        </connections>
+                                    </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EIp-rz-Htn">
-                                        <rect key="frame" x="75" y="-7" width="85" height="32"/>
+                                        <rect key="frame" x="151" y="-7" width="80" height="32"/>
                                         <buttonCell key="cell" type="push" title="Close" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ouu-yN-s2h">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -1388,8 +1398,10 @@
                                 <visibilityPriorities>
                                     <integer value="1000"/>
                                     <integer value="1000"/>
+                                    <integer value="1000"/>
                                 </visibilityPriorities>
                                 <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
                                     <real value="3.4028234663852886e+38"/>
                                     <real value="3.4028234663852886e+38"/>
                                 </customSpacing>
@@ -1415,7 +1427,7 @@
                 </viewController>
                 <customObject id="LOz-a8-oZc" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="90" y="1439"/>
+            <point key="canvasLocation" x="90.5" y="1472"/>
         </scene>
         <!--Cadastro de Consultor-->
         <scene sceneID="WO8-V8-78w">
