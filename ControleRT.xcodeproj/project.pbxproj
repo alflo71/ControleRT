@@ -20,6 +20,7 @@
 		EF31301020A4B6310005B906 /* Cliente.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF31300D20A4B6300005B906 /* Cliente.swift */; };
 		EF31301120A4B6310005B906 /* Consultor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF31300E20A4B6300005B906 /* Consultor.swift */; };
 		EFCB1A1F20A5FF060048B660 /* ViewCadastroArquiteto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCB1A1E20A5FF060048B660 /* ViewCadastroArquiteto.swift */; };
+		EFCB1A2120A62A0B0048B660 /* ViewCadastroConsultor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCB1A2020A62A0B0048B660 /* ViewCadastroConsultor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +53,7 @@
 		EF31300D20A4B6300005B906 /* Cliente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cliente.swift; sourceTree = "<group>"; };
 		EF31300E20A4B6300005B906 /* Consultor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Consultor.swift; sourceTree = "<group>"; };
 		EFCB1A1E20A5FF060048B660 /* ViewCadastroArquiteto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCadastroArquiteto.swift; sourceTree = "<group>"; };
+		EFCB1A2020A62A0B0048B660 /* ViewCadastroConsultor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCadastroConsultor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			children = (
 				EF1AB94E20A4E94F00EF079F /* viewCadastroCliente.swift */,
 				EFCB1A1E20A5FF060048B660 /* ViewCadastroArquiteto.swift */,
+				EFCB1A2020A62A0B0048B660 /* ViewCadastroConsultor.swift */,
 			);
 			path = GrupoViews;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				EF1AB94F20A4E94F00EF079F /* viewCadastroCliente.swift in Sources */,
 				EF31301020A4B6310005B906 /* Cliente.swift in Sources */,
 				EF31300F20A4B6310005B906 /* Arquiteto.swift in Sources */,
+				EFCB1A2120A62A0B0048B660 /* ViewCadastroConsultor.swift in Sources */,
 				EFCB1A1F20A5FF060048B660 /* ViewCadastroArquiteto.swift in Sources */,
 				EF31301120A4B6310005B906 /* Consultor.swift in Sources */,
 				EF312FF620A4B5700005B906 /* ViewController.swift in Sources */,

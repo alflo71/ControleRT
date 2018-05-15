@@ -1,5 +1,5 @@
 //
-//  ViewCadastroArquiteto.swift
+//  ViewCadastroConsultor.swift
 //  ControleRT
 //
 //  Created by Aloisio on 11/05/18.
@@ -8,55 +8,51 @@
 
 import Cocoa
 import RealmSwift
-
-class ViewCadastroArquiteto: NSViewController {
+class ViewCadastroConsultor: NSViewController {
     
     let realm = try! Realm()
     
-    @IBOutlet weak var textArquitetoID: NSTextField!
+    @IBOutlet weak var textConsultorID: NSTextField!
     @IBOutlet weak var textNome: NSTextField!
     @IBOutlet weak var textTelefone: NSTextField!
-    @IBOutlet weak var textEndereco: NSTextField!
     @IBOutlet weak var textEmail: NSTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
     }
-    
     @IBAction func btnUpdate(_ sender: Any) {
         let uuid = UUID().uuidString
         
         do {
             try! realm.write {
-                let newArquiteto = Arquiteto()
-                newArquiteto.arquitetoID = "\(uuid)"
-                newArquiteto.nome = textNome.stringValue
-                newArquiteto.telefone = textTelefone.stringValue
-                newArquiteto.email = textEmail.stringValue
-                
+                let newConsultor = Consultor()
+                newConsultor.consultorID = "\(uuid)"
+                newConsultor.nome = textNome.stringValue
+                newConsultor.telefone = textTelefone.stringValue
+                newConsultor.email = textEmail.stringValue
+               
                 let cliente = Cliente()
-                cliente.arquiteto = newArquiteto.self
+                cliente.consultor = newConsultor.self
                 
-                let consultor = Consultor()
-                consultor.arquiteto = newArquiteto.self
+                let arquiteto = Arquiteto()
+                arquiteto.consultor = newConsultor.self
                 
-                realm.add(newArquiteto.self)
+                realm.add(newConsultor.self)
                 
                 let someClientes = realm.objects(Cliente.self)
-                newArquiteto.clientes.append(objectsIn: someClientes)
-                newArquiteto.clientes.append(cliente)
+                newConsultor.clientes.append(objectsIn: someClientes)
+                newConsultor.clientes.append(cliente)
             }
         } catch let error as NSError {
             print(error.localizedDescription)
         }
+    
         
     }
-    
+
     @IBAction func btnClose(_ sender: Any) {
         dismiss(sender)
-        
     }
     
 }
-

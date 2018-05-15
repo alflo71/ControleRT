@@ -38,6 +38,7 @@ class viewCadastroCliente: NSViewController {
                 newCliente.telefone = textTelefone.stringValue
                 newCliente.endereco = textEndereco.stringValue
                 newCliente.email = textEmail.stringValue
+                
              
                 realm.add(newCliente.self)
             }
@@ -50,11 +51,15 @@ class viewCadastroCliente: NSViewController {
     }
     
     @IBAction func btnClose(_ sender: Any) {
-        
-        
+        dismiss(sender)
     }
     
+//    override func dismiss(_ sender: Any?) {
+//        if let wc = self.view.window?.windowController {
+//            wc.dismissController(sender)
+//        }
+//    }
 
-    }
+}
     
     

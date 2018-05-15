@@ -13,8 +13,13 @@ class Consultor: Object {
     
     @objc dynamic var consultorID = ""
     @objc dynamic var nome = ""
-//    let clientes = LinkingObjects(fromType: Cliente.self, property: "nome")
-//    let arquitetos = LinkingObjects(fromType: Arquiteto.self, property: "nome")
+    @objc dynamic var telefone = ""
+    @objc dynamic var email = ""
+    @objc dynamic var cliente: Cliente?
+    @objc dynamic var arquiteto: Arquiteto?
+    let clientes = List<Cliente>()
+    let arquitetos = List<Arquiteto>()
+
     
     override static func primaryKey() -> String? {
         return "consultorID"

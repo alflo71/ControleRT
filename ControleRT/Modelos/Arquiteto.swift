@@ -15,6 +15,9 @@ class Arquiteto: Object {
     @objc dynamic var nome = ""
     @objc dynamic var telefone = ""
     @objc dynamic var email = ""
+    @objc dynamic var cliente: Cliente?
+    @objc dynamic var consultor: Consultor?
+    let clientes = List<Cliente>()
     
     // Dados de conta corrente
     @objc dynamic var contaID =  ""
